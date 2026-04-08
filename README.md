@@ -4,7 +4,8 @@
 
 ## 📌 Project Overview
 This project focuses on predicting used car prices using machine learning regression techniques.  
-The dataset was cleaned, processed, and analyzed to build predictive models capable of estimating car prices based on multiple features.
+The dataset was cleaned, processed, and analyzed to build predictive models capable of estimating car prices based on multiple features.  
+This project demonstrates both exploratory analysis using Jupyter Notebook and a production-style implementation using a structured Python script.
 
 ---
 
@@ -58,10 +59,20 @@ Models were evaluated using:
 ---
 
 ## 📂 Repository Structure
-- `Regression Case Study - Portfolio.ipynb` → Main project notebook  
-- `cars_sampled.csv` → Dataset used for training and evaluation  
+- `Regression Case Study - Portfolio.ipynb` → Main analysis notebook  
+- `main.py` → Modular Python script for end-to-end ML pipeline  
+- `cars_sampled.csv` → Dataset used for training and evaluation   
 
 ---
+
+## ▶️ How to Run
+
+### Option 1: Run Notebook
+Click the **Open in Colab** badge above and run all cells.
+
+### Option 2: Run Python Script
+Make sure required libraries are installed, then run:
+`python main.py`
 
 ## 📌 Key Highlights
 - End-to-end regression modeling workflow  
