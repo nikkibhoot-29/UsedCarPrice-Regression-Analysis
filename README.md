@@ -1,82 +1,135 @@
-# 🚗 Used Car Price Prediction – Regression Analysis
+# Used Car Price Prediction – Regression Analysis
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nikkibhoot-29/UsedCarPrice-Regression-Analysis/blob/main/Regression%20Case%20Study%20-%20Portfolio.ipynb)
 
-## 📌 Project Overview
-This project focuses on predicting used car prices using machine learning regression techniques.  
-The dataset was cleaned, processed, and analyzed to build predictive models capable of estimating car prices based on multiple features.  
-This project demonstrates both exploratory analysis using Jupyter Notebook and a production-style implementation using a structured Python script.
+Predictive modeling of used car prices using regression techniques, with emphasis on feature influence and model comparison.
 
 ---
 
-## 🎯 Problem Statement
-Develop a regression model that accurately predicts the price of used cars based on relevant attributes such as vehicle age, power, brand, and other characteristics.
+## Overview
+
+Used car pricing is influenced by multiple factors such as age, power, brand, and usage patterns.
+This project builds regression models to estimate car prices and analyze how different features contribute to price variation.
+
+The focus is on developing reliable predictive models while understanding the underlying drivers of price.
 
 ---
 
-## 🛠️ Project Workflow
+## Problem
 
-### 1️⃣ Data Cleaning & Preprocessing
-- Removed irrelevant columns  
-- Handled missing values (Omitted & Imputed versions)  
-- Treated extreme outliers (price, power, registration year)  
+Estimate the price of used cars based on structured features, while handling data quality issues such as missing values, outliers, and inconsistent records.
 
-### 2️⃣ Feature Engineering
-- Created new variable **Age** from year and month of registration  
-- Encoded categorical variables using dummy encoding  
+---
 
-### 3️⃣ Model Building
-- Linear Regression  
-- Random Forest Regressor  
+## Data
 
-### 4️⃣ Model Evaluation
+The dataset consists of used car attributes including:
+
+* vehicle age (derived from registration year)
+* power and engine-related features
+* brand and categorical attributes
+* usage-related variables
+
+Data was cleaned and transformed to support regression modeling.
+
+---
+
+## Methodology
+
+### Data Preparation
+
+* Removal of irrelevant columns
+* Handling missing values (omission and imputation)
+* Treatment of extreme outliers (price, power, registration year)
+
+### Feature Engineering
+
+* Derived **Age** from registration details
+* Encoding of categorical variables using dummy variables
+
+---
+
+## Modeling
+
+### Models Used
+
+* Linear Regression
+* Random Forest Regressor
+
+---
+
+## Evaluation
+
 Models were evaluated using:
-- Mean Squared Error (MSE)  
-- Root Mean Squared Error (RMSE)  
-- R² Score  
+
+* Mean Squared Error (MSE)
+* Root Mean Squared Error (RMSE)
+* R² Score
+
+### Results
+
+| Model             | R² Score    |
+| ----------------- | ----------- |
+| Linear Regression | 0.65 – 0.68 |
+| Random Forest     | 0.77 – 0.81 |
+
+→ Random Forest performs better by capturing non-linear relationships in the data.
 
 ---
 
-## 📊 Results
+## Key Insights
 
-| Model              | R² Score   |
-|--------------------|------------|
-| Linear Regression  | 0.65 – 0.68 |
-| Random Forest      | 0.77 – 0.81 |
-
-✅ Random Forest performed better by capturing non-linear relationships in the dataset.
+* Car price is strongly influenced by power and age
+* Linear models capture general trends but miss non-linear effects
+* Random Forest provides better performance due to its ability to model complex relationships
+* Log transformation improves prediction stability and reduces skewness
 
 ---
 
-## 🧰 Technologies Used
-- Python  
-- Pandas  
-- NumPy  
-- Matplotlib  
-- Seaborn  
-- Scikit-learn  
+## Visual Insights
+
+### Feature Relationships
+
+![Feature Relationships](images/feature_relationships.png)
+
+### Distribution of Cars
+
+![Distribution](images/distribution.png)
+
+### Actual vs Predicted (Linear Regression)
+
+![Prediction](images/prediction.png)
 
 ---
 
-## 📂 Repository Structure
-- `Regression Case Study - Portfolio.ipynb` → Main analysis notebook  
-- `main.py` → Modular Python script for end-to-end ML pipeline  
-- `cars_sampled.csv` → Dataset used for training and evaluation   
+## Execution
+
+The project is implemented in:
+
+* Jupyter Notebook (analysis & experimentation)
+* `main.py` (structured pipeline execution)
+
+Install dependencies:
+
+```bash 
+pip install -r requirements.txt
+```
+
+Run:
+
+```bash
+python main.py
+```
 
 ---
 
-## ▶️ How to Run
+## Tech Stack
 
-### Option 1: Run Notebook
-Click the **Open in Colab** badge above and run all cells.
-
-### Option 2: Run Python Script
-Make sure required libraries are installed, then run:
-`python main.py`
-
-## 📌 Key Highlights
-- End-to-end regression modeling workflow  
-- Data preprocessing & feature engineering  
-- Model building & performance comparison  
+Python · Pandas · NumPy · Scikit-learn · Matplotlib · Seaborn
 
 ---
+
+## Closing Note
+
+Price prediction is not only about fitting models, but understanding how features interact and influence outcomes.
+This project highlights the importance of balancing model performance with interpretability.
