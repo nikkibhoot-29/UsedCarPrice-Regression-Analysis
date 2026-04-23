@@ -1,6 +1,6 @@
 # Used Car Price Prediction – Regression Analysis
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nikkibhoot-29/UsedCarPrice-Regression-Analysis/blob/main/Regression%20Case%20Study%20-%20Portfolio.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nikkibhoot-29/UsedCarPrice-Regression-Analysis/blob/main/notebooks/Regression%20Case%20Study%20-%20Portfolio.ipynb)
 
 Predictive modeling of used car prices using regression techniques, with emphasis on feature influence and model comparison.
 
